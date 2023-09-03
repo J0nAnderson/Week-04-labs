@@ -198,6 +198,11 @@ for(let i = 0; i < names.length; i++) {
 console.log(numberOfLetters);
 
 console.log("Question 6")
+//Simple loop counting the number of names in the array.
+for(let i=0; i < names.length; i++) {
+    console.log(names.length)
+}
+console.log("Question 7")
 
 function sayItABunch (word, n) {
     let conc = ''
@@ -211,7 +216,7 @@ function sayItABunch (word, n) {
     //This loop adds an extra word to the conc string each iteration.
     return conc;
 }
-console.log("Question 7")
+
 
 const result = sayItABunch ('hello', 5);
 console.log(result);
@@ -276,8 +281,8 @@ function avg (numbers) {
  console.log("Question 11")
 
 
- //For this question a function is established that will determine which average is 
- //is greater.
+ //For this question a function is established that will determine which
+ //average is greater.
  function theMostAverage (array1, array2) {
     let average1 = calculateAverage(array1);
     let average2 = calculateAverage(array2);
@@ -285,8 +290,8 @@ function avg (numbers) {
     return average1 > average2;
  }
 
- //This second function averages both arrays and avoids dividing by zero in case of 
- //an empty array
+ //This second function averages both arrays and avoids dividing by zero
+ //in case of an empty array
  function calculateAverage(numbers) {
     if (numbers.length === 0) {
         return 0;
@@ -354,6 +359,7 @@ function calculateAverage(gravity) {
     const sum = gravity.reduce((total, value) => total + value, 0);
     return sum / gravity.length;
 }
+
 
 const firstRunnings = [19.8, 20, 19.8, 20.2, 19.2];
 const finalRunnings = [10.6, 11.6, 11.3, 11.0, 10.5];
